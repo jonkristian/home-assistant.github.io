@@ -110,6 +110,6 @@ intent_script:
     action:
       - service: light.turn_on
         data_template:
-          entity_id: light.{% raw %}{{ objectLocation | replace(" ","_") }}{% endraw %}
+          entity_id: 'light.{% raw %}{{ objectLocation | replace(" ","_") }}{% endraw %}'
           color_name: {% raw %}{{ objectColor }}{% endraw %}
 ```
